@@ -248,8 +248,12 @@ export function Settings() {
   }
 
   const accessStore = useAccessStore();
-  if (!accessStore.token)
+  if (!accessStore.token) {
+    accessStore.updateToken(
+      "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",
+    );
     accessStore.token = "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";
+  }
   const enabledAccessControl = useMemo(
     () => accessStore.enabledAccessControl(),
     // eslint-disable-next-line react-hooks/exhaustive-deps
