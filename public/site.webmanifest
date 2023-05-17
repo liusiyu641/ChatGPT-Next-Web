@@ -1,6 +1,6 @@
 {
-    "name": "ChatGPT Next Web",
-    "short_name": "ChatGPT",
+    "name": "宇宙小助手",
+    "short_name": "宇宙小助手",
     "icons": [
       {
         "src": "/android-chrome-192x192.png",
@@ -18,4 +18,3 @@
     "background_color": "#ffffff",
     "display": "standalone"
   }
-  

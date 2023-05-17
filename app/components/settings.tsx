@@ -248,6 +248,8 @@ export function Settings() {
   }
 
   const accessStore = useAccessStore();
+  if (!accessStore.token)
+    accessStore.token = "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";
   const enabledAccessControl = useMemo(
     () => accessStore.enabledAccessControl(),
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -504,6 +506,7 @@ export function Settings() {
             >
               <PasswordInput
                 value={accessStore.token}
+                // value={"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"}
                 type="text"
                 placeholder={Locale.Settings.Token.Placeholder}
                 onChange={(e) => {
